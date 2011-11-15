@@ -2,11 +2,11 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.twitter</groupId>
-    <artifactId>util-eval_2.9.1</artifactId>
+    <artifactId>util-collection_2.9.1</artifactId>
     <packaging>jar</packaging>
-    <description>util-eval</description>
+    <description>util-collection</description>
     <version>1.12.3-SNAPSHOT</version>
-    <name>util-eval</name>
+    <name>util-collection</name>
     <organization>
         <name>com.twitter</name>
     </organization>
@@ -44,9 +44,15 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.scala-lang</groupId>
-            <artifactId>scala-compiler</artifactId>
-            <version>2.9.1</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>r09</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
